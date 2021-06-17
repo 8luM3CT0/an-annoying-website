@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .icon{
+        @apply hidden xl:inline-flex p-2 h-10 w-10 bg-gray-200 rounded-full text-gray-700 cursor-pointer hover:bg-gray-300
+    }
+    
+  .inputIcon {
+    @apply flex items-center space-x-1 hover:bg-gray-100 flex-grow justify-center p-2 rounded-xl cursor-pointer;
+  }
+
+  .removeImage{
+    @apply flex flex-col filter hover:brightness-110  transition duration-150 transform hover:scale-105 cursor-pointer
+  }
+
+  .inputBox{
+    @apply bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6
+  }
+
+  .headerInput{
+    @apply hidden md:inline-flex ml-3 flex items-center outline-none placeholder-gray-500 bg-transparent flex-shrink
+  }
+
+  .inputBoxTop{
+    @apply flex space-x-4 p-4 items-center
+  }
+
+  .inputBoxBottom{
+    @apply flex justify-evenly p-3 border-t items-center
+  }
+
+  .postMajority{
+    @apply p-5 bg-white mt-5 rounded-t-2xl shadow-sm
+  }
+
+  .postFooter{
+    @apply flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t
+  }
+
+  .contactDiv{
+    @apply flex items-center space-x-3 mb-2 relative hover:bg-gray-200 cursor-pointer p-2 rounded-xl
+  }
+
+  .contactActive{
+    @apply absolute bottom-2 left-7 bg-green-400 h-3 w-3 rounded-full
+  }
+}
